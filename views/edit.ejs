@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/restaurants/<%=old._id%>" method="post" >
+        <input value="<%=old.rid %>" name="rid" required><br><br>
+        <input  value="<%=old.rname %>" name="rname" required><br><br>
+        <input value="<%=old.ct %>" name="ct" required><br><br>
+        <input  value="<%=old.location %>" name="location" required><br><br>
+        <input  value="<%=old.nOfT%>" name="nOfT" required><br><br>
+        <input  value="<%=old.hasOS %>" name="hasOS" required><br><br>
+        <input  value="<%=old.ohours %>" name="ohours" required><br><br>
+        <input value="<%=old.cn %>" name="cn" required><br><br>
+        <button type="submit">edit</button>
+    </form>
+</body>
+</html>

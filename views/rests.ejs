@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #rests{
+            border-bottom: 2px solid black;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <a href="/restaurant/new">
+        <h1>Add a Resturant</h1>
+    </a>
+    <div id="rests">
+
+
+        <% for(let rest of rests) { %>
+            <h1><%=rest.rid %></h1>
+            <h2>
+                <%=rest.rname %>
+            </h2>
+            <h3>
+                <%=rest.ct %>
+            </h3>
+            <h4>
+                <%=rest.location %>
+            </h4>
+            <h4><%=rest.nOfT %></h4>
+            <h4><%=rest.hasOS %></h4>
+            <h4><%=rest.ohours %></h4>
+            <h4><%=bank.cn %></h4>
+            <a href="/restaurants/<%=rest._id%>">Show</a>
+            <a href="/restaurants/<%=rest._id%>/edit">Edit</a>
+            <a href="/restaurants/<%=rest._id%>/delete">Delete</a>
+            <% } %>
+        <br>
+           
+    </div>
+</body>
+
+</html>
